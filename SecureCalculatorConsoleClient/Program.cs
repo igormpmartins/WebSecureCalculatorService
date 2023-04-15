@@ -22,6 +22,10 @@ namespace WebSecureCalculatorConsoleClient
             }
             catch (MessageSecurityException e)
             {
+                Console.WriteLine("Invalid User!");
+            }
+            catch (SecurityAccessDeniedException e)
+            {
                 Console.WriteLine("Access Denied!");
             }            
             catch (Exception e)
