@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSecureCalculatorServiceLibrary", "SecureMultiplicationServiceLibrary\WebSecureCalculatorServiceLibrary.csproj", "{09DA4875-2354-4D28-886B-DDD53AEFE606}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSecureCalculatorConsoleClient", "SecureCalculatorConsoleClient\WebSecureCalculatorConsoleClient.csproj", "{51012A5E-A209-4011-B1D7-1E91EFF249BF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{68748A32-2285-4044-A88B-E33D0DB1AC34} = {68748A32-2285-4044-A88B-E33D0DB1AC34}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebSecureCalculatorWebHosted", "WebSecureCalculatorWebHosted\", "{68748A32-2285-4044-A88B-E33D0DB1AC34}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		ProjectReferences = "{09da4875-2354-4d28-886b-ddd53aefe606}|SecureCalculatorServiceLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49684"
+		Debug.AspNetCompiler.PhysicalPath = "WebSecureCalculatorWebHosted\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49684\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49684"
+		Release.AspNetCompiler.PhysicalPath = "WebSecureCalculatorWebHosted\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49684\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49684"
+		SlnRelativePath = "WebSecureCalculatorWebHosted\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09DA4875-2354-4D28-886B-DDD53AEFE606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09DA4875-2354-4D28-886B-DDD53AEFE606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09DA4875-2354-4D28-886B-DDD53AEFE606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09DA4875-2354-4D28-886B-DDD53AEFE606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51012A5E-A209-4011-B1D7-1E91EFF249BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51012A5E-A209-4011-B1D7-1E91EFF249BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51012A5E-A209-4011-B1D7-1E91EFF249BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51012A5E-A209-4011-B1D7-1E91EFF249BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68748A32-2285-4044-A88B-E33D0DB1AC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68748A32-2285-4044-A88B-E33D0DB1AC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68748A32-2285-4044-A88B-E33D0DB1AC34}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{68748A32-2285-4044-A88B-E33D0DB1AC34}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F1E75ED-AE37-4C93-A86E-5AC5B6619BBF}
+	EndGlobalSection
+EndGlobal
